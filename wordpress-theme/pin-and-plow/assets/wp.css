@@ -1,0 +1,40 @@
+/* WordPress-specific layout additions. The landing-page styles live in site.css. */
+.main-nav .nav-list{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:31px}
+.main-nav .nav-list li{margin:0;padding:0}
+.pin-plow-inner .site-shell{height:auto;min-height:560px}
+.inner-main{padding-top:95px;padding-bottom:110px;flex:1}
+.inner-heading{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-size:clamp(68px,9vw,130px);line-height:.98;font-weight:400;letter-spacing:-2px;text-transform:uppercase;max-width:1040px;margin:0 0 55px}
+.inner-main .eyebrow{color:#aaa69e}
+.archive-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.archive-card{border:1px solid #474743;padding:30px;min-height:290px;display:flex;flex-direction:column;background:#151615}
+.archive-card h2{font:400 clamp(40px,4vw,65px)/1 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:-1px;margin:10px 0 20px}
+.archive-card h2 a:hover,.read-more:hover,.back-link:hover{color:#53bdec}
+.archive-card>p:not(.eyebrow){color:#aaa69e;line-height:1.6;font-size:16px;margin:0 0 25px}
+.read-more,.back-link,.pagination,.story-end{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px}
+.read-more{border-top:1px solid #5b5b54;padding-top:18px;margin-top:auto;display:block}
+.pagination{margin-top:40px}.pagination .nav-links{display:flex;gap:18px}.pagination a:hover{color:#53bdec}
+.inner-empty{font-size:18px;line-height:1.6;color:#aaa69e;margin:0 0 30px}
+.single-story{max-width:900px}.single-story .back-link{display:inline-block;margin-bottom:65px;color:#aaa69e}.single-story .inner-heading{margin-bottom:55px}
+.story-image{margin:0 0 45px}.story-image img{width:100%;height:auto;display:block}
+.article-content{max-width:710px;color:#cbc8c0;font-size:19px;line-height:1.8;overflow-wrap:break-word}
+.article-content p{margin:0 0 1.5em}.article-content h2,.article-content h3{font-family:Anton,Impact,sans-serif;font-weight:400;line-height:1.1;color:#e3e0d6;text-transform:uppercase;margin:1.5em 0 .5em}.article-content h2{font-size:48px}.article-content h3{font-size:35px}
+.article-content a{text-decoration:underline;text-underline-offset:4px}.article-content a:hover{color:#53bdec}
+.article-content img{max-width:100%;height:auto}.article-content blockquote{border-left:3px solid #983630;margin:35px 0;padding:8px 0 8px 25px;color:#e3e0d6;font-size:23px}
+.article-content .alignwide{max-width:900px}.article-content .aligncenter{display:block;margin-left:auto;margin-right:auto}.article-content .alignright{float:right;margin:0 0 20px 25px}.article-content .alignleft{float:left;margin:0 25px 20px 0}
+.story-end{max-width:710px;border-top:1px solid #5b5b54;margin-top:65px;padding-top:20px;display:flex;justify-content:space-between;color:#a8a39b}
+.story-end span{font-size:20px}.comments-area{max-width:710px;padding-top:70px}.comments-area textarea,.comments-area input:not([type=submit]){display:block;max-width:100%;background:#161716;color:#e3e0d6;border:1px solid #777;padding:10px}.comments-area input[type=submit]{background:#983630;color:#fff;border:0;padding:12px 20px;cursor:pointer}
+.feature-title.is-dynamic{max-width:100%;font-size:clamp(36px,4.1vw,65px);line-height:.94;overflow-wrap:anywhere;transform:none;text-wrap:balance}.signup-plugin-form input,.signup-plugin-form button{max-width:100%}
+@media(max-width:1000px){.main-nav .nav-list{gap:14px}.inner-main{padding-top:65px}}
+@media(max-width:700px){.main-nav .nav-list{display:flex;align-items:stretch;flex-direction:column;gap:0}.main-nav .nav-list a{display:block}.archive-grid{grid-template-columns:1fr}.inner-main{padding:60px 0 80px}.inner-heading{font-size:clamp(52px,13vw,80px)}.single-story .back-link{margin-bottom:35px}.article-content{font-size:17px}.article-content .alignright,.article-content .alignleft{float:none;margin:25px auto;display:block}}
+/* Product-led landing page. */
+.story-shop-link{margin-top:28px}
+.story-tile-title{overflow-wrap:anywhere;text-wrap:balance}
+.story-tile-bottom .product-tile-price,.story-tile-bottom .product-tile-price span{font:12px 'IBM Plex Mono',monospace;letter-spacing:0}
+.story-tile-bottom>span:last-child{font:10px 'IBM Plex Mono',monospace;letter-spacing:1px;white-space:nowrap}
+.feature-footer .woocommerce-Price-amount{font-weight:600}
+.empty-card{border:1px solid #55544e;background:#171817;margin-top:24px;padding:45px;min-height:170px}
+.empty-card p{color:#aaa69e;font-size:18px;line-height:1.6;margin:0}
+.membership-actions{align-self:center;border-top:1px solid #77766d;padding-top:25px}
+.membership-actions .eyebrow{margin-bottom:15px}.membership-actions p:not(.eyebrow){margin:0 0 25px;color:#c4beb4;max-width:400px}
+.membership-secondary{display:inline-block;font:11px 'IBM Plex Mono',monospace;letter-spacing:1px;margin:15px 0 0 20px}.membership-secondary:hover{color:#53bdec}
+@media(max-width:700px){.membership-actions{padding-top:25px}.membership-secondary{display:block;margin-left:0}.empty-card{padding:28px}}
